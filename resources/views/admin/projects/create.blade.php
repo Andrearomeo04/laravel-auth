@@ -12,11 +12,11 @@
                 <div class="row">
                     <div class="col-12">
                         <label for="" class="control-label">Nome del Progetto</label>
-                        <input type="text" name="title" id="" class="form-control" placeholder="Nome del Progetto">
+                        <input type="text" name="title" id="" class="form-control" placeholder="Nome del Progetto" value="{{ old('title') }}">
                     </div>
                     <div class="col-12">
                         <label for="" class="control-label">Descrizione</label>
-                        <textarea name="description" id="" cols="25" row="10" class="form-control"></textarea>
+                        <textarea name="description" id="" cols="25" row="10" class="form-control">{{ old('description') }}</textarea>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-success">Salva</button>

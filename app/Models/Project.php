@@ -13,6 +13,6 @@ class Project extends Model
     protected $fillable = ['title', 'slug', 'description'];
 
     public static function generateSlug($title){
-        return Str::slug('$title, '-'');
+        return Str::slug($title, '-');
     }
 }

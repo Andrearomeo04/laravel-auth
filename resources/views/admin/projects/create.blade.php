@@ -7,7 +7,7 @@
             <h2>Aggiungi</h2>
         </div>
         <div class="col-12">
-            <form action="{{ route('admin.project.store') }}" method="post">
+            <form action="{{ route('admin.projects.store') }}" method="post">
                 @csrf 
                 <div class="row">
                     <div class="col-12">

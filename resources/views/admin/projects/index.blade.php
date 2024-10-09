@@ -20,7 +20,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    @foreach($projects as $project)
+                    <tr>
+                        +<td>{{ $project->id }}</td>
+                        <td>{{ $project->title }}</td>
+                        <td>{{ $project->slug }}</td>
+                        <td>{{ $project->description }}</td>
+                        <td>
+                            <div class="d-flex">
+                                <a href="" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </td>
+
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

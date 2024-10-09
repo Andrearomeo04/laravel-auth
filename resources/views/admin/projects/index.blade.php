@@ -10,22 +10,20 @@
             </div>
         </div>
         <div class="col-12">
-            <table class="table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Titolo</th>
                         <th>Slug</th>
-                        <th>Descrizione</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($projects as $project)
                     <tr>
-                        +<td>{{ $project->id }}</td>
+                        <td>{{ $project->id }}</td>
                         <td>{{ $project->title }}</td>
                         <td>{{ $project->slug }}</td>
-                        <td>{{ $project->description }}</td>
                         <td>
                             <div class="d-flex">
                                 <a href="{{ route('admin.projects.show', ['project' => $project->id]) }}" class="btn btn-primary">

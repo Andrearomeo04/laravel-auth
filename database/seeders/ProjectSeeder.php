@@ -14,7 +14,7 @@ class ProjectSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
         for($i = 0; $i<5; $i++){
             $project = new Project();
@@ -22,7 +22,7 @@ class ProjectSeeder extends Seeder
             $project->slug = Str::slug($project->title, '-');
             $project->description = $faker->text(100);
 
-            project->save();
+            $project->save();
         }
     }
 }

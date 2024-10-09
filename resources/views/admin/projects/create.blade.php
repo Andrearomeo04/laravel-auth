@@ -11,7 +11,12 @@
                 @csrf 
                 <div class="row">
                     <div class="col-12">
-                        
+                        <label for="" class="control-label">Nome del Progetto</label>
+                        <input type="text" name="name" id="" class="form-control" placeholder="Nome del Progetto">
+                    </div>
+                    <div class="col-12">
+                        <label for="" class="control-label">Descrizione</label>
+                        <textarea name="description" id="" class="form-control"></textarea>
                     </div>
                 </div>
             </form>

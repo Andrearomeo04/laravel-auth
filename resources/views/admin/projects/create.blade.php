@@ -16,7 +16,10 @@
                     </div>
                     <div class="col-12">
                         <label for="" class="control-label">Descrizione</label>
-                        <textarea name="description" id="" class="form-control"></textarea>
+                        <textarea name="description" id="" cols="25" row="10" class="form-control"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Salva</button>
                     </div>
                 </div>
             </form>

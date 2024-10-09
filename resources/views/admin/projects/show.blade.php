@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col-12">
             <h2 class="text-center">{{ $project->title }}</h2>
+            <h2>Descrizione</h2>
             <p>{{ $project->description }}</p>
         </div>
     </div>

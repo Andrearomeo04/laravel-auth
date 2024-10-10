@@ -32,6 +32,13 @@
                                 <a href="{{ route('admin.projects.edit', ['project' => $project->id]) }}" class="btn btn-success ms-2">
                                     <i class="fas fa-edit"></i>
                                 </a>
+                                <form action="{{ route('admin.projects.destroy', ['project' => $project->id]) }}" method="post" class="ms-2">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger delete-project">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
                             </div>
                         </td>
 
@@ -42,4 +49,5 @@
         </div>
     </div>
 </div>
+@include('partials.modal_delete')
 @endsection

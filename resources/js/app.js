@@ -15,5 +15,8 @@ buttons.forEach((button) => {
         const bootstrap_modal = new bootstrap.Modal(modal);
 
         bootstrap_modal.show()
+        document.querySelector('.confirm-delete').addEventListener('click', function() {
+            button.parentElement.submit()
+        })
     })
 })

@@ -9,6 +9,11 @@ import.meta.glob([
 const buttons = document.querySelectorAll('.delete-project')
 buttons.forEach((button) => {
     button.addEventListener('click', function(e){
+        e.preventDefault();
         
+        const modal = document.getElementById('deleteProjectModal');
+        const bootstrap_modal = new bootstrap.Modal(modal);
+
+        bootstrap_modal.show()
     })
 })

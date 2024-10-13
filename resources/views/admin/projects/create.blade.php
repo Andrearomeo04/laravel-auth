@@ -16,9 +16,13 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{ route('admin.projects.store') }}" method="post">
+            <form action="{{ route('admin.projects.store') }}" method="post" enctype="multipart/form-data">
                 @csrf 
                 <div class="row">
+                    <div class="col-12">
+                        <label for="" class="control-label">Immagine</label>
+                        <input type="file" name="image" id="" class="form-control" placeholder="Seleziona un immagine..." value="{{ old('image') }}">
+                    </div>
                     <div class="col-12">
                         <label for="" class="control-label">Nome del Progetto</label>
                         <input type="text" name="title" id="" class="form-control" placeholder="Nome del Progetto" value="{{ old('title') }}">
